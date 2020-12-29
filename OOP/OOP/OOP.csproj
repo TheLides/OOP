@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9CBE2437-77C1-42F9-934E-964E7858E878}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>OOP</RootNamespace>
+    <AssemblyName>OOP</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\Creatures\Creature.cs" />
+    <Compile Include="Classes\Creatures\Grass.cs" />
+    <Compile Include="Classes\Creatures\Herbivore\Deer.cs" />
+    <Compile Include="Classes\Creatures\Herbivore\Rabbit.cs" />
+    <Compile Include="Classes\Creatures\Herbivore\Sheep.cs" />
+    <Compile Include="Classes\Creatures\Herbivorous.cs" />
+    <Compile Include="Classes\Creatures\Human.cs" />
+    <Compile Include="Classes\Creatures\Mob.cs" />
+    <Compile Include="Classes\Creatures\Omnivore\Bear.cs" />
+    <Compile Include="Classes\Creatures\Omnivore\Dog.cs" />
+    <Compile Include="Classes\Creatures\Omnivore\Hedgehog.cs" />
+    <Compile Include="Classes\Creatures\Omnivorous.cs" />
+    <Compile Include="Classes\Creatures\Plant\Carrot.cs" />
+    <Compile Include="Classes\Creatures\Plant\GreenGrass.cs" />
+    <Compile Include="Classes\Creatures\Plant\Oats.cs" />
+    <Compile Include="Classes\Creatures\Predator.cs" />
+    <Compile Include="Classes\Creatures\Predators\Cat.cs" />
+    <Compile Include="Classes\Creatures\Predators\Wolf.cs" />
+    <Compile Include="Classes\Creatures\Predators\Wolverine.cs" />
+    <Compile Include="Classes\Enum.cs" />
+    <Compile Include="Classes\Ground.cs" />
+    <Compile Include="Classes\House.cs" />
+    <Compile Include="Classes\InterfaceFood\IAllHerbivorousFood\IDeerFood.cs" />
+    <Compile Include="Classes\InterfaceFood\IAllHerbivorousFood\IRabbitFood.cs" />
+    <Compile Include="Classes\InterfaceFood\IAllHerbivorousFood\ISheepFood.cs" />
+    <Compile Include="Classes\InterfaceFood\IAllOmnivorousFood\IBearFood.cs" />
+    <Compile Include="Classes\InterfaceFood\IAllOmnivorousFood\IDogFood.cs" />
+    <Compile Include="Classes\InterfaceFood\IAllOmnivorousFood\IHedgehogFood.cs" />
+    <Compile Include="Classes\InterfaceFood\IAllPredatorFood\ICatFood.cs" />
+    <Compile Include="Classes\InterfaceFood\IAllPredatorFood\IWolfFood.cs" />
+    <Compile Include="Classes\InterfaceFood\IAllPredatorFood\IWolverineFood.cs" />
+    <Compile Include="Classes\InterfaceFood\IFood.cs" />
+    <Compile Include="Classes\InterfaceFood\IHerbivorousFood.cs" />
+    <Compile Include="Classes\InterfaceFood\IHumanFood.cs" />
+    <Compile Include="Classes\InterfaceFood\IHunterFood.cs" />
+    <Compile Include="Classes\InterfaceFood\IOmnivorousFood.cs" />
+    <Compile Include="Classes\InterfaceFood\IPredatorFood.cs" />
+    <Compile Include="Classes\SimulationObject.cs" />
+    <Compile Include="Classes\Square.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 и x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
